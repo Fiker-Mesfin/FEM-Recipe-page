@@ -1,0 +1,128 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --Font-size-paragraph: 16px;
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    --ff-main: 'Outfit', sans-serif;
+    --ff-heading: 'Young Serif', serif;
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-800: 800;
+}
+@font-face{
+    font-family: "Young Serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face{
+    font-family: "Outfit";
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+}
+body{
+    font-family: var(--ff-main);
+    font-weight: var(--fw-400);
+    font-size: var(--Font-size-paragraph);
+    line-height: 1.5;
+    color: var(--Stone-600);
+    background-color: var(--Stone-150);
+}
+h1{
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-800);
+    color: var(--Stone-900);
+    
+}
+h2{
+    line-height: 1.5;
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-700);
+    color: var(--Brown-800)
+
+}
+.prep-title{
+    color: var(--Rose-800);
+    font-family: var(--ff-main);
+    font-weight: var(--fw-700);
+}
+span{
+    font-weight: var(--fw-700);
+}
+[data-cell="nutrient-value"]{
+    color: var(--Brown-800);
+    font-weight: var(--fw-700);
+}
+li{
+    padding-left: 1rem;
+    margin-bottom: 1px;
+}
+li::marker{
+    color: var(--Rose-800);
+    font-weight: var(--fw-400);
+}
+#omelette-pic {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius:4px;
+  margin-bottom: 0.8rem;
+  
+}
+.wrapper{
+    display: grid;
+    place-items: center;
+
+}
+.recipe-wrapper{
+    max-width: 50em;
+    margin: 3rem  ;
+    padding: 1.55rem;
+    border-radius: 8px;
+    background-color: var(--White);
+}
+section{
+    margin-top: 1.8rem;
+}
+hr{
+    outline: none;
+    border: none;
+    height: .5px;
+    background: var(--Stone-150);
+}
+.prep-duration{
+    background-color: var(--Rose-50);
+    padding: 1.5rem;
+    border-radius: 2px;
+    margin-top: 2rem;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+    padding: 1rem;
+    border-bottom: 1px solid var(--Stone-150);
+}
+@media(max-width: 500px){
+    .recipe-wrapper{
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    #omelette-pic{
+        border-radius: 0;
+    }
+    .recipe-intro{
+        padding: 0 1.75;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+}
+
+
